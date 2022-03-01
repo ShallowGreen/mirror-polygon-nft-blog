@@ -9,7 +9,7 @@ const arweave = initialize();
 type TagType = {
   name: string;
   values: string[];
-}
+};
 
 const getData = async (txId: string) => {
   const buffer = (await arweave.transactions.getData(txId, {

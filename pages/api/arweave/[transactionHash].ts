@@ -14,7 +14,7 @@ export default async function (
   try {
     const {transactionHash} = req.query;
     console.log(transactionHash, 'transactionHash');
-    
+
     // Get Arweave transaction data. Documentation can be found here: https://github.com/ArweaveTeam/arweave-js
     const txDataResp = (await arweave.transactions.getData(
       transactionHash as string,

@@ -1,0 +1,1 @@
+export const MIN_NUMBER_OF_CONFIRMATIONS = 2;

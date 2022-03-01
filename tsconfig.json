@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/layouts": ["layouts"],
+      "@/components": ["components"],
+      "@/components/*": ["components/*"],
+      "@/utils/*": ["utils/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/lib/*": ["lib/*"],
+      "@/fetchers": ["fetchers"],
+      "@/typechain": ["typechain"],
+      "@/routes": ["routes.ts"],
+      "@/context": ["context"],
+      "@/context/*": ["context/*"],
+      "@/types": ["types/index.ts"],
+      "@/constants": ["constants.ts"],
+      "@/pages/*": ["pages/*"],
+    },
+    "noImplicitAny": false,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "./web3/scripts",
+    "./web3/test",
+    "./typechain",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "files": [
+    "./hardhat.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "__test__"
+  ]
+}

@@ -35,7 +35,9 @@ export default async function (
     // Retrieve searchAddress
     const searchAddress = query && query[0];
     // Build tags
-    const tags: TagType[] = [];
+    const tags: TagType[] = [
+      {name: 'App-Name', values: [process.env.APP_NAME as string]},
+    ];
     if (searchAddress) {
       tags.push({name: 'Address', values: [searchAddress]});
     }
